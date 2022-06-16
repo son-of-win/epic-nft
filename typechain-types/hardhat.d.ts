@@ -41,9 +41,13 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC165__factory>;
     getContractFactory(
-      name: "Greeter",
+      name: "Box",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Greeter__factory>;
+    ): Promise<Contracts.Box__factory>;
+    getContractFactory(
+      name: "BoxV2",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.BoxV2__factory>;
     getContractFactory(
       name: "MyEpicNFT",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -85,10 +89,15 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IERC165>;
     getContractAt(
-      name: "Greeter",
+      name: "Box",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.Greeter>;
+    ): Promise<Contracts.Box>;
+    getContractAt(
+      name: "BoxV2",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.BoxV2>;
     getContractAt(
       name: "MyEpicNFT",
       address: string,

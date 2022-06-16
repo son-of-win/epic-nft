@@ -20,7 +20,9 @@ export type { ERC165 } from "./@openzeppelin/contracts/utils/introspection/ERC16
 export { ERC165__factory } from "./factories/@openzeppelin/contracts/utils/introspection/ERC165__factory";
 export type { IERC165 } from "./@openzeppelin/contracts/utils/introspection/IERC165";
 export { IERC165__factory } from "./factories/@openzeppelin/contracts/utils/introspection/IERC165__factory";
-export type { Greeter } from "./contracts/Greeter";
-export { Greeter__factory } from "./factories/contracts/Greeter__factory";
+export type { Box } from "./contracts/Box";
+export { Box__factory } from "./factories/contracts/Box__factory";
+export type { BoxV2 } from "./contracts/BoxV2";
+export { BoxV2__factory } from "./factories/contracts/BoxV2__factory";
 export type { MyEpicNFT } from "./contracts/MyEpicNFT";
 export { MyEpicNFT__factory } from "./factories/contracts/MyEpicNFT__factory";

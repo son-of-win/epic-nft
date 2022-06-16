@@ -7,7 +7,7 @@ const main = async () => {
     // call function
     let myToken = await nftContract.makeAnEpicNFT();
     await myToken.wait()
-    console.log("Minted NFT #1")
+    console.log(myToken)
 };
 
 main()
